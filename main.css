@@ -48,11 +48,60 @@ body {
     color: #e15f41;
 }
 
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
     background-color: #e15f41;
     color: #ffeae0;
 }
 
+#fale-conosco button:hover {
+    transition: all 0.2s ease;
+    transform: translate(0px, 1px);
+}
+
 .nav-cardapio .nav-link:hover {
     color: #e15f41;
+}
+
+.sombra {
+    box-shadow: 0 8px 6px rgba(0,0,0,0.2);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+#fale-conosco {
+    background-color: rgb(237, 215, 187);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e15f41;
+    height: 7vh;
+    color: #ffeae0;
+    font-size: 30px;
+    
+}
+
+
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="main.css"> 
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top pt-2 pb-2" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top pt-2 pb-2 sombra" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menunavegacao">
@@ -40,7 +40,7 @@
                     </li>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#fale-conosco" class="nav-link">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Fale conosco
                         </a>
@@ -49,7 +49,7 @@
             </nav>
         </div>
     </header>
-    <div class="container" data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div class="container" data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="cabecalho">
         <section id="sobre-o-restaurante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
@@ -81,7 +81,7 @@
                         <div class="col-md-5">
                             <img src="img/restaurante.jpg" class="d-block w-100 rounded" alt="Foto da imagem do restaurante">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span>o restaurante</span></h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vitae nam porro modi illum earum labore dolores nulla, commodi a sit iure recusandae, laudantium dicta sunt excepturi mollitia sequi. Vero.</p>
                             <h3 class="section-title">Sobre <span>o espaço</span></h3>
@@ -105,7 +105,7 @@
         <section id="eventos" class="pb-5 pt-5 mb-5 mt-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Para todas <span>as ocasiões</span></h2>
+                    <h2 class="section-title text-center mt-3">Para todas <span>as ocasiões</span></h2>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-4">
@@ -324,8 +324,74 @@
                 </div>
             </div>
         </section>
-    </div>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="row"></div>
+            <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                    <form id="formulario">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea  id="mensagem" class="form-control" required ></textarea>
+                        </div>
+                        <button id="botao" type="submit" class="btn fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row"></div>
+                    <h3 class="section-title fs-4 text-colored">
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                        Redes sociais
+                    </h3>
+                    <ul class="social-links">
+                        <li class="fs-5">
+                            <a href="#">
+                                <i class="bi bi-facebook text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-5 ms-1 me-1">
+                            <a href="#">
+                                <i class="bi bi-instagram text-colored"></i>
+                            </a>
+                        </li>    
+                        <li class="fs-5">
+                            <a href="#">
+                                <i class="bi bi-whatsapp text-colored"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereco
+                        </h3>
+                        <p>
+                            Rua teste Exemplo, numero 145, bairro Bootstrap, VR, RJ
+                        </p>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h2>Todos os direitos reservados</h2>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="lib/jquery.mask.min.js"></script>
+    <script src="main.js"></script>
     <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
 </body>
 </html>
